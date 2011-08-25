@@ -14,4 +14,5 @@ Usage:
 
 Where "<selector>" is the jQuery selector for the element.
 
-See the test/index.html for an example.
+See the test/index.html or
+http://cabbiepete.github.com/jQuery-Share-Email/ for an examples.
