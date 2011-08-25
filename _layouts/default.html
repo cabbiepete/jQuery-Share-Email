@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery-Share-Email{% if page.title %}: {{ page.title }}{% endif %}</title>
+    <link rel="stylesheet" href="/jQuery-Share-Email/css/screen.css" />
+    {% if page.code_style %}<link href="/jQuery-Share-Email/css/{{ page.code_style }}.css?{{site.time}}" rel="stylesheet" />{% endif %}
+    {% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}" />{% endif %}
+    {% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}" />{% endif %}
+    <meta name="author" content="Peter Simmons" />
+
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/jQuery-Share-Email/js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="/jQuery-Share-Email/js/jquery.shareemail.js"></script>
+</head>
+<body class="bp">
+<div id="container" class="page {% if page.location %}{{ page.location }}{% endif %}">
+       <header>
+            <div class="logo">
+                <a href="/jQuery-Share-Email/">jQuery-Share-Email</a>
+            </div>
+        </header>
+
+    <div id="content ">
+        {{ content }}
+    </div>
+
+
+    <footer>
+           <p>&copy; 2011 Peter Simmons - cabbiepete </p>
+   </footer>
+
+</div>
+
+  <!-- yes, I want to know all about the bots visiting, hopefully, not only bots  -->
+   <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25329956-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</body>
+</html>

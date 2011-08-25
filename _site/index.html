@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery-Share-Email: Demo site for jQuery-Share-Email plugin</title>
+    <link rel="stylesheet" href="/jQuery-Share-Email/css/screen.css" />
+    
+    <meta name="keywords" content="jquery, social, share via email" />
+    <meta name="description" content="A simple jquery plugin to make a nice share via email link on your site based on the pages contents." />
+    <meta name="author" content="Peter Simmons" />
+
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/jQuery-Share-Email/js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="/jQuery-Share-Email/js/jquery.shareemail.js"></script>
+</head>
+<body class="bp">
+<div id="container" class="page front">
+       <header>
+            <div class="logo">
+                <a href="/jQuery-Share-Email/">jQuery-Share-Email</a>
+            </div>
+        </header>
+
+    <div id="content ">
+        <h1 id='jquery_share_email_plugin_demo_site'>jQuery Share Email plugin demo site</h1>
+
+<p>This page demonstrates the email share plugin</p>
+
+<h2 id='dependancies'>Dependancies</h2>
+
+<ul>
+<li><a href='http://jquery.com/' title='jQuery home pageTitle'>jQuery</a></li>
+
+<li><a href='http://api.jquery.com/jquery.tmpl/' title='Tmpl API Page'>jQuery tmpl plugin</a></li>
+</ul>
+
+<h2 id='code'>Code</h2>
+
+<p>The code below is all that is required.</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery-1.6.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/jQuery-Share-Email/js/jquery.tmpl.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/jQuery-Share-Email/js/jquery.shareemail.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  (function($) {
+    $(&quot;.st_email&quot;).shareEmail();
+  })(jQuery);
+&lt;/script&gt;
+&lt;span class=&quot;st_email&quot;&gt;&lt;/span&gt;</code></pre>
+
+<p>Let&#8217;s quickly go through this. Firstly we include the jQuery library, then we include the jQuery Tmpl plugin, , next we include the shareemail pluging, finally we call the shareemail plugin using the selector of all elements with class &#8216;st_email&#8217;, this then applies to the span element at the end of the code.</p>
+
+<p>Once the plugin has been applied the span element now looks like this.</p>
+
+<pre><code>&lt;span class=&quot;st_email&quot;&gt;
+  &lt;span class=&quot;button&quot; style=&quot;text-decoration:none;display:inline-block;cursor:pointer;&quot;&gt;
+    &lt;span class=&quot;chicklets email&quot;&gt;Email&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/span&gt;</code></pre>
+
+<h2 id='demo'>Demo</h2>
+
+<p>Below is a share email link using the code above.</p>
+<div>
+  <span class='st_email' />
+  <script type='text/javascript'>
+    (function($) {
+      $(".st_email").shareEmail();
+    })(jQuery);
+  </script>
+ </div>
+
+    </div>
+
+
+    <footer>
+           <p>&copy; 2011 Peter Simmons - cabbiepete </p>
+   </footer>
+
+</div>
+
+  <!-- yes, I want to know all about the bots visiting, hopefully, not only bots  -->
+   <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25329956-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</body>
+</html>
