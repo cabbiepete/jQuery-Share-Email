@@ -23,7 +23,7 @@
         var data = {
           title: document.title,
           description: $('meta[name=description]').attr('content'),
-          url: window.location.href,
+          url: typeof $(this).attr('data-url') !== 'undefined' ? $(this).attr('data-url') : window.location.href,
           nl: "\n" // tmpl seems to each newline chars so we use this instead.
         }
         var url = 'mailto:?Subject=';
